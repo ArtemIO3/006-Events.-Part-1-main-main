@@ -33,9 +33,10 @@
       font-size: 18px;
       border: none;
       border-radius: 5px;
-      background: #cedbd1;
+      background: linear-gradient(#44adf3, rgb(0, 0, 0));
       cursor: pointer;
       transition: background-color 0.2s;
+         color: #ffffff;
     }
     .operator {
       background: #f9a825;
