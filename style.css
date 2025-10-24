@@ -1,36 +1,58 @@
-body{
-    display: flex;
-    justify-content: center;
-}
-
-#main{
-    display: flex;
-    flex-direction: column;
- justify-content: space-between;
-    border:2px solid #C23D11;
-    width: 200px;
-    height: 200px;
-    margin-top: 350px;
-    background-color:#00B6C7;
-    border-radius:10px;
-    box-shadow: 0 5px 10px black;
-}
-#main div{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-button{
-    width: 40px;
-    background-color: #F45B1F;
-    border-radius:5px;
-    box-shadow: 0 3px 5px black;
-}
-input
-{
-    margin-top: 10px;
-    border-radius:5px;
-    background-color: #E9F4A8;
-    border:2px solid #F9B319 ;
-}
+ body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f2f2f2;
+    }
+    .calculator {
+      background: #367faf;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(231, 227, 227, 0.2);
+      width: 240px;
+    }
+    .display {
+      width: 100%;
+      height: 40px;
+      font-size: 24px;
+      text-align: right;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background: #cedbd1;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .operator {
+      background: #f9a825;
+      color: white;
+    }
+    .operatorplus {
+      background: #f9a825;
+     grid-column: span 2;
+      color: white;
+    }
+    .equal {
+      background: #4caf50;
+      color: white;
+      grid-column: span 2;
+    }
+    .clear {
+      background: #f44336;
+      grid-column: span 2;
+      color: white;
+    }
