@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+ justify-content: space-between;
+    border:2px solid #C23D11;
+    width: 200px;
+    height: 200px;
+    margin-top: 350px;
+    background-color:#00B6C7;
+    border-radius:10px;
+    box-shadow: 0 5px 10px black;
+}
+#main div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+button{
+    width: 40px;
+    background-color: #F45B1F;
+    border-radius:5px;
+    box-shadow: 0 3px 5px black;
+}
+input
+{
+    margin-top: 10px;
+    border-radius:5px;
+    background-color: #E9F4A8;
+    border:2px solid #F9B319 ;
+}
