@@ -46,6 +46,8 @@
         let remBtn = document.querySelector("#rem-btn");
         let mulBtn = document.querySelector("#mul-btn");
         let divBtn = document.querySelector("#div-btn");
+        let res = document.querySelector("#reset-btn");
+
 
         addBtn.addEventListener("click", function () {
             alert(Number(input1.value) + Number(input2.value));
@@ -61,6 +63,10 @@
 
         divBtn.addEventListener("click", function () {
             alert(input1.value / input2.value);
+        });
+          res.addEventListener("click", function () {
+        input1.value = " ";
+        input3.value = " ";
         });
     </script>
 </body>

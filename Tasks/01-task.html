@@ -10,13 +10,29 @@
 
 <body>
     <button id="testBtn">Test Button</button>
+      <div onclick="alert('Hello World')">
+        Click me
+    </div>
+      <div onclick="showMessage()">
+        Click me
+    </div>
     <script>
+        function showMessage()
+        {
+            alert('Hello World')
+        }
         /*
         Задание:
         Добавьте для кнопки testBtn обработчик на событие click.
         Обработчик должен выводить на экран сообщение Hello world.
         Добавьте обработчик тремя разными способами.
         */
+        let btn = document.querySelector("#testBtn");
+        btn.addEventListener("click", handler);
+
+        function handler() {
+            alert("Hello World ");
+        }
     </script>
 </body>
 
