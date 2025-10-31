@@ -12,13 +12,17 @@
             color: red;
             display: none;
         }
+
+        .border {
+            border: 1px solid red;
+        }
     </style>
 </head>
 
 <body>
     Операнд 1: <input id="input1" type="text"> <br />
     <span id="input1Error" class="error">Введите значение</span> <br />
-    
+
     Операнд 2: <input id="input2" type="text"> <br />
     <span id="input2Error" class="error">Введите значение</span> <br />
 
@@ -46,7 +50,6 @@
         let remBtn = document.querySelector("#rem-btn");
         let mulBtn = document.querySelector("#mul-btn");
         let divBtn = document.querySelector("#div-btn");
-        let res = document.querySelector("#reset-btn");
 
 
         addBtn.addEventListener("click", function () {
@@ -64,10 +67,19 @@
         divBtn.addEventListener("click", function () {
             alert(input1.value / input2.value);
         });
-          res.addEventListener("click", function () {
-        input1.value = " ";
-        input3.value = " ";
-        });
+        let resbutton = document.getElementById("reset-btn").addEventListener("click", function () {
+
+            input1.classList.add("border")
+            input2.classList.add("border")
+
+            input1.value = "0";
+            input2.value = "0";
+            let span1 = document.getElementById("input1Erorr");
+            span1.style.display = "block";
+             let span2 = document.getElementById("input2Erorr");
+            span2.style.display = "block";
+        })
+
     </script>
 </body>
 
